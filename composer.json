@@ -1,0 +1,11 @@
+{
+  "name": "webit/compress-images",
+  "description": "Compress images with TinyPNG",
+  "homepage": "https://github.com/webit-de/compress-images/",
+  "license": ["GPL-2.0+"],
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0",
+    "tinify/tinify": "^1.4"
+  }
+}
