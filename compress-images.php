@@ -65,7 +65,13 @@ if(true === empty($fileList)) {
 $finfo = new finfo;
 foreach ($fileList as $file) {
 	if(in_array($finfo->file($pathInput . $file, FILEINFO_MIME_TYPE), $imageTypes)) {
-		\Tinify\fromFile($pathInput . $file)->toFile($pathOutput. $file);
+		try {
+			\Tinify\fromFile($pathInput . $file)->toFile($pathOutput. $file);
+		} catch(\Tinify\Exception $e) {
+			// catch server errors
+			echo 'Tinify API error: ' . $e->getMessage() . PHP_EOL;
+			sleep(10);
+		}
 		echo $pathInput . $file . ' → ' . $pathOutput. $file . PHP_EOL;
 	}
 }
