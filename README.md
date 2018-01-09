@@ -3,6 +3,8 @@ Compress images with TinyPNG
 
 Compress all PNG & JPG images within an directory and its subdirectories using the [tinypng.com](https://tinypng.com/) API.
 
+[![Packagist](https://img.shields.io/packagist/v/webit-de/compress-images.svg)](https://packagist.org/packages/webit-de/compress-images/)
+
 Requirements
 ------------
 
