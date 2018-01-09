@@ -1,7 +1,7 @@
 Compress images with TinyPNG
 ============================
 
-Compress all PNG & JPG images within an directory and its subdirectories using the tinypng.com API.
+Compress all PNG & JPG images within an directory and its subdirectories using the [tinypng.com](https://tinypng.com/) API.
 
 Requirements
 ------------
@@ -13,8 +13,9 @@ Requirements
 Installation
 ------------
 
-  * Clone the git repository
-  * Run ```composer update```
+Packagist Entry https://packagist.org/packages/webit-de/compress-images/
+
+    composer create-project webit-de/compress-images .
 
 Usage
 -----
