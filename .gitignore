@@ -1,8 +1,3 @@
-### Folders
-.idea
-vendor
-
-### Files
-*.bat
-*.sublime-*
-/build/build.local.properties
+/.env
+/composer.phar
+/vendor
